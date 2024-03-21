@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="google" content="notranslate">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+<link rel="stylesheet" href="assets/css/style.min.css">
+<title>Portfo</title>
+</head>
+<body>
+
+    <svg display="none">
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 23" id="facebook">
+    <path d="M9.64388 0.125C6.441 0.125 4.5625 1.81663 4.5625 5.67113V9.0625H0.5V13.125H4.5625V22.875H8.625V13.125H11.875L12.6875 9.0625H8.625V6.3585C8.625 4.90656 9.09869 4.1875 10.4613 4.1875H12.6875V0.291562C12.3024 0.239562 11.1803 0.125 9.64388 0.125Z"></path>
+    </symbol>
+</svg>
+
+<svg display="none">
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 19" id="instagram">
+      <path d="M5.31856 0.5625C2.43337 0.5625 0.0625 2.93012 0.0625 5.81856V13.1814C0.0625 16.0666 2.43012 18.4375 5.31856 18.4375H12.6814C15.5666 18.4375 17.9375 16.0699 17.9375 13.1814V5.81938C17.9375 2.93337 15.5699 0.5625 12.6814 0.5625H5.31856ZM5.31856 2.1875H12.6814C13.1585 2.18686 13.6309 2.28034 14.0717 2.46259C14.5126 2.64484 14.9131 2.91228 15.2504 3.24958C15.5877 3.58689 15.8552 3.98743 16.0374 4.42826C16.2197 4.86909 16.3131 5.34154 16.3125 5.81856V13.1814C16.3131 13.6585 16.2197 14.1309 16.0374 14.5717C15.8552 15.0126 15.5877 15.4131 15.2504 15.7504C14.9131 16.0877 14.5126 16.3552 14.0717 16.5374C13.6309 16.7197 13.1585 16.8131 12.6814 16.8125H5.31938C4.84229 16.8132 4.36974 16.7198 3.92882 16.5376C3.48789 16.3554 3.08726 16.088 2.74987 15.7507C2.41248 15.4134 2.14497 15.0128 1.96267 14.5719C1.78037 14.131 1.68686 13.6585 1.6875 13.1814V5.81938C1.68675 5.34229 1.78015 4.86974 1.96236 4.42882C2.14456 3.98789 2.41198 3.58726 2.74929 3.24987C3.08661 2.91248 3.48718 2.64497 3.92807 2.46267C4.36895 2.28037 4.84148 2.18686 5.31856 2.1875ZM13.7986 3.96525C13.7018 3.96482 13.6059 3.98357 13.5164 4.02041C13.4269 4.05725 13.3456 4.11146 13.2771 4.1799C13.2087 4.24834 13.1545 4.32966 13.1177 4.41916C13.0808 4.50867 13.0621 4.60459 13.0625 4.70138C13.0625 5.11088 13.3891 5.4375 13.7986 5.4375C13.8955 5.43804 13.9915 5.41937 14.0811 5.38258C14.1707 5.34578 14.2521 5.29159 14.3206 5.22314C14.3892 5.15469 14.4434 5.07333 14.4803 4.98378C14.5172 4.89422 14.536 4.79823 14.5356 4.70138C14.536 4.60452 14.5172 4.50853 14.4803 4.41897C14.4434 4.32942 14.3892 4.24806 14.3206 4.17961C14.2521 4.11116 14.1707 4.05697 14.0811 4.02017C13.9915 3.98338 13.8955 3.96471 13.7986 3.96525ZM9 4.625C6.31875 4.625 4.125 6.81875 4.125 9.5C4.125 12.1812 6.31875 14.375 9 14.375C11.6812 14.375 13.875 12.1812 13.875 9.5C13.875 6.81875 11.6812 4.625 9 4.625ZM9 6.25C10.8062 6.25 12.25 7.69381 12.25 9.5C12.25 11.3062 10.8062 12.75 9 12.75C7.19381 12.75 5.75 11.3062 5.75 9.5C5.75 7.69381 7.19381 6.25 9 6.25Z"></path>
+    </symbol>
+  </svg>
+
+<svg display="none">
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 17" id="be">
+    <path d="M0.8125 0.984375V16.0156H8.07462C8.74737 16.0156 13.3802 15.8791 13.3802 11.6484C13.3802 9.00456 11.5619 8.10594 10.6389 7.83944C11.3181 7.51931 12.6701 6.75719 12.6701 4.717C12.6701 3.58031 12.5076 0.984375 7.8715 0.984375H0.8125ZM17.3672 2.38106V3.75175H22.9783V2.38188L17.3672 2.38106ZM4.11287 3.54862H7.21094C7.50344 3.54862 9.4705 3.39344 9.4705 5.27519C9.4705 6.88394 8.04862 7.05294 7.46444 7.05294H4.1145L4.11287 3.54862ZM20.3125 4.99569C16.0688 4.99569 15.1832 8.68119 15.1832 10.2769C15.1832 15.0163 19.0686 15.5582 20.3125 15.5582C23.6673 15.5582 24.6187 13.388 25.0096 12.1814H22.5721C22.477 12.4926 21.7661 13.5017 20.4141 13.5017C18.1472 13.5017 17.9514 11.7305 17.9514 10.9375H25.1623C25.3086 8.19531 24.1085 4.99569 20.3125 4.99569ZM20.2361 7.05294C20.9121 7.05294 21.4581 7.24956 21.7856 7.61112C22.1122 7.97675 22.3535 8.50975 22.4193 9.21094H17.9506C17.9636 9.01756 18.0082 8.79494 18.0781 8.55037C18.148 8.30012 18.2561 8.06206 18.434 7.83944C18.6111 7.62087 18.8589 7.43075 19.1449 7.28125C19.4366 7.1285 19.7982 7.05294 20.2361 7.05294ZM4.11369 9.3125H7.69356C8.4045 9.3125 10.0799 9.42381 10.0799 11.4705C10.0799 13.4546 7.96981 13.4514 7.64237 13.4514H4.11287L4.11369 9.3125Z"></path>
+    </symbol>
+</svg>
+
+<svg display="none">
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 17" id="twitter">
+    <path d="M19.75 2.45409C19.0199 2.77732 18.2453 2.98904 17.4523 3.08215C18.2872 2.58221 18.912 1.79596 19.2105 0.869717C18.4253 1.33507 17.5667 1.66366 16.6714 1.84147C16.123 1.25513 15.4108 0.84737 14.6275 0.671215C13.8442 0.49506 13.026 0.558657 12.2793 0.853737C11.5326 1.14882 10.892 1.66173 10.4407 2.32577C9.98944 2.98982 9.7484 3.77428 9.74894 4.57715C9.74894 4.89159 9.78388 5.19628 9.85456 5.48797C8.26329 5.40964 6.70638 4.9969 5.2853 4.27662C3.86421 3.55635 2.61084 2.54472 1.60688 1.30765C1.25017 1.91825 1.06307 2.61306 1.06494 3.32022C1.06494 4.70715 1.76937 5.9324 2.84512 6.64984C2.20972 6.62968 1.5884 6.45749 1.03325 6.14772V6.1989C1.0327 7.12286 1.3521 8.0185 1.93717 8.73361C2.52223 9.44872 3.33687 9.93919 4.24262 10.1217C3.65362 10.2832 3.03535 10.3071 2.43563 10.1915C2.69108 10.9864 3.18844 11.6816 3.85822 12.1801C4.528 12.6786 5.33675 12.9554 6.1715 12.9719C5.34165 13.6233 4.39149 14.1046 3.3754 14.3883C2.35932 14.672 1.29725 14.7526 0.25 14.6253C2.07855 15.8021 4.20748 16.4269 6.38194 16.425C13.7416 16.425 17.7667 10.328 17.7667 5.04028C17.7667 4.86965 17.7602 4.69415 17.7537 4.52272C18.5358 3.95645 19.2116 3.2556 19.75 2.45409Z"></path>
+    </symbol>
+</svg>
+
+<svg display="none">
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 21" id="pinterest">
+    <path d="M10 0.75C4.61394 0.75 0.25 5.11394 0.25 10.5C0.25 14.6324 2.82075 18.1586 6.44856 19.5805C6.36244 18.8086 6.28363 17.6256 6.48025 16.7806L7.62263 11.9349C7.62263 11.9349 7.33419 11.3499 7.33419 10.487C7.33419 9.13175 8.11825 8.11937 9.09569 8.11937C9.92688 8.11937 10.3307 8.745 10.3307 9.49412C10.3307 10.3318 9.79688 11.5822 9.52063 12.7409C9.29231 13.7118 10.0098 14.5024 10.9644 14.5024C12.6975 14.5024 14.0308 12.6742 14.0308 10.0369C14.0308 7.70419 12.3546 6.07187 9.95856 6.07187C7.18469 6.07187 5.55644 8.15187 5.55644 10.3034C5.55644 11.1411 5.88062 12.0397 6.28362 12.528C6.36244 12.6231 6.373 12.7092 6.35025 12.8075C6.25947 13.1756 6.16956 13.544 6.0805 13.9125C6.03581 14.0929 5.9375 14.1311 5.75306 14.0425C4.53431 13.477 3.773 11.6968 3.773 10.2644C3.773 7.18988 6.00738 4.36562 10.2161 4.36562C13.5994 4.36562 16.227 6.77387 16.227 9.99869C16.227 13.3567 14.1064 16.0599 11.1676 16.0599C10.1812 16.0599 9.25087 15.5497 8.93319 14.9436C8.93319 14.9436 8.44487 16.8034 8.32381 17.26C8.10525 18.1074 7.51131 19.1677 7.11156 19.8153C8.04711 20.1043 9.02083 20.2508 10 20.25C15.3861 20.25 19.75 15.8861 19.75 10.5C19.75 5.11394 15.3861 0.75 10 0.75Z"></path>
+    </symbol>
+</svg>
+
+<svg display="none">
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" id="linkedin">
+        <path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"></path>
+    </symbol>
+</svg>
+
+<svg display="none">
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" id="dribble">
+        <path d="M256 8C119.252 8 8 119.252 8 256s111.252 248 248 248 248-111.252 248-248S392.748 8 256 8zm163.97 114.366c29.503 36.046 47.369 81.957 47.835 131.955-6.984-1.477-77.018-15.682-147.502-6.818-5.752-14.041-11.181-26.393-18.617-41.614 78.321-31.977 113.818-77.482 118.284-83.523zM396.421 97.87c-3.81 5.427-35.697 48.286-111.021 76.519-34.712-63.776-73.185-116.168-79.04-124.008 67.176-16.193 137.966 1.27 190.061 47.489zm-230.48-33.25c5.585 7.659 43.438 60.116 78.537 122.509-99.087 26.313-186.36 25.934-195.834 25.809C62.38 147.205 106.678 92.573 165.941 64.62zM44.17 256.323c0-2.166.043-4.322.108-6.473 9.268.19 111.92 1.513 217.706-30.146 6.064 11.868 11.857 23.915 17.174 35.949-76.599 21.575-146.194 83.527-180.531 142.306C64.794 360.405 44.17 310.73 44.17 256.323zm81.807 167.113c22.127-45.233 82.178-103.622 167.579-132.756 29.74 77.283 42.039 142.053 45.189 160.638-68.112 29.013-150.015 21.053-212.768-27.882zm248.38 8.489c-2.171-12.886-13.446-74.897-41.152-151.033 66.38-10.626 124.7 6.768 131.947 9.055-9.442 58.941-43.273 109.844-90.795 141.978z"></path>
+    </symbol>
+</svg>
+
+<svg display="none">
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" id="youtube">
+        <path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"></path>
+    </symbol>
+</svg>
+
+    <div class="page">
+        <header class="header">
+    <div class="container container--wide">
+        <div class="header__inner">
+
+            <div class="header__logo">
+                <img src="assets/images/logo.svg" alt="">
+            </div>
+
+            <div class="burger">
+                <span class="burger__span"></span>
+            </div>
+
+        </div>
+    </div>
+</header>
+
+<div class="header__menu--overlay">
+    <div class="container container--wide">
+        <div class="header__menu--position">
+            <div class="header__menu">
+                <a href="#services" class="btn header__menu--btn">
+                    <span class="btn__inner header__menu--btn__inner">Services</span>
+                </a>
+                <a href="#projects" class="btn header__menu--btn">
+                    <span class="btn__inner header__menu--btn__inner">Projects</span>
+                <a href="#clients" class="btn header__menu--btn">
+                    <span class="btn__inner header__menu--btn__inner">Clients</span>
+                </a>
+                <a href="#awards" class="btn header__menu--btn">
+                    <span class="btn__inner header__menu--btn__inner">Awards</span>
+                </a>
+                <a href="#testimonials" class="btn header__menu--btn">
+                    <span class="btn__inner header__menu--btn__inner">Testimonials</span>
+                </a>
+                <a href="#news" class="btn header__menu--btn">
+                    <span class="btn__inner header__menu--btn__inner">News</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+        <div class="intro">
+    <div class="container">
+        <div class="intro__inner">
+
+            <div class="intro__info">
+                <h1 class="title title__top intro__title">
+                    Chris lee<br>creative design
+                </h1>
+                <p class="intro__paragraph">
+                    Make designs specially illustrations, logos, UI/UX, apps & websites, social media, magazines & banners.
+                </p>
+                <button class="btn btn__intro">
+    <span class="btn__inner @@btnInnerSub">Contact Us</span>
+</button>
+            </div>
+
+            <div class="intro__social">
+                <a href="#" class="intro__social--btn btn">
+                    <span class="intro__social--btn__inner btn__inner">
+                        <svg class="intro__social--icon">
+                            <use xlink:href="#facebook"></use>
+                        </svg>
+                    </span>
+                </a>
+                <a href="#" class="intro__social--btn btn">
+                    <span class="intro__social--btn__inner btn__inner">
+                        <svg class="intro__social--icon">
+                            <use xlink:href="#instagram"></use>
+                        </svg>
+                    </span>
+                </a>
+                <a href="#" class="intro__social--btn btn">
+                    <span class="intro__social--btn__inner btn__inner">
+                        <svg class="intro__social--icon">
+                            <use xlink:href="#be"></use>
+                        </svg>
+                    </span>
+                </a>
+                <a href="#" class="intro__social--btn btn">
+                    <span class="intro__social--btn__inner btn__inner">
+                        <svg class="intro__social--icon">
+                            <use xlink:href="#twitter"></use>
+                        </svg>
+                    </span>
+                </a>
+                <a href="#" class="intro__social--btn btn">
+                    <span class="intro__social--btn__inner btn__inner">
+                        <svg class="intro__social--icon">
+                            <use xlink:href="#pinterest"></use>
+                        </svg>
+                    </span>
+                </a>
+            </div>
+
+
+        </div>
+    </div>
+    <!-- <div class="intro__scroll">
+        <button class="intro__scroll--btn">
+            <svg class="intro__scroll--svg" viewBox="0 0 160 30">
+                <path d="M157.8,28c-15.3,0-30.2-4.4-43.1-12.6l-14.2-9.1c-13.1-8.4-30-8.4-43.1,0l-14.2,9.1C30.2,23.6,15.3,28,0,28H157.8z"/>
+            </svg>
+        </button>
+    </div> -->
+</div>
+        <div class="container">
+    <div class="services" id="services">
+
+        <div class="services__top">
+            <h1 class="title title__top services__title">Our services</h1>
+            <p class="paragraph services__paragraph">
+                Voluptas sit aspernatur te natus accusan maiores alias consequatur aut equatur aut perferendi.
+            </p>
+        </div>
+
+        <div class="services__items">
+            <div class="services__item">
+                <img src="assets/images/services/service-1.svg" alt="UI/UX design" class="services__item--img">
+                <h1 class="title services__item--title">UI/UX design</h1>
+                <p class="paragraph services__item--paragraph">
+                    Perferendis doloribus asperiores repellat quia voluptas aspernatur te natus accusan maiores alias consequatur aut aut.
+                </p>
+            </div>
+            <div class="services__item">
+                <img src="assets/images/services/service-2.svg" alt="Branding" class="services__item--img">
+                <h1 class="title services__item--title">Branding</h1>
+                <p class="paragraph services__item--paragraph">
+                    Asperiores repellat quia voluptas aut aspernatur te natus accusan maiores alias consequatur aut perferendis dolor.
+                </p>
+            </div>
+            <div class="services__item">
+                <img src="assets/images/services/service-3.svg" alt="Logo Design" class="services__item--img">
+                <h1 class="title services__item--title">Logo Design</h1>
+                <p class="paragraph services__item--paragraph">
+                    Maiores alias consequatur aut aut repellat perferendi doloribus asperiores voluptas aspernatur te natus accusan.
+                </p>
+            </div>
+        </div>
+
+    </div>
+</div>
+        <div class="projects" id="projects">
+    <div class="container">
+        <div class="projects__top">
+            <h1 class="title title__top projects__top--title">Some projects</h1>
+            <a href="#" class="projects__top--link">view all projects</a>
+            <div class="projects__top--navigation">
+                <button class="btn slider__btn slider__btn--prev projects__slider--btn__prev">
+    <span class="btn__inner slider__btn--inner slider__btn--inner__prev">prev</span>
+</button>
+                <button class="btn btn slider__btn slider__btn--next projects__slider--btn__next">
+    <span class="btn__inner slider__btn--inner slider__btn--inner__next">next</span>
+</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="projects__items">
+        <div class="container">
+            <div class="swiper projects__slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide projects__slider--slide">
+    <div class="slide__photo">
+        <img src="assets/images/projects/projects-1.png" alt="Minimal magazine">
+    </div>
+    <div class="slide__sup">Magazine</div>
+    <h1 class="title slide__title">Minimal magazine</h1>
+</div>  
+                    <div class="swiper-slide projects__slider--slide">
+    <div class="slide__photo">
+        <img src="assets/images/projects/projects-2.png" alt="Amira Karla">
+    </div>
+    <div class="slide__sup">Branding, Logo</div>
+    <h1 class="title slide__title">Amira Karla</h1>
+</div>
+                    <div class="swiper-slide projects__slider--slide">
+    <div class="slide__photo">
+        <img src="assets/images/projects/projects-3.png" alt="Konx Bone">
+    </div>
+    <div class="slide__sup">Product, Logo</div>
+    <h1 class="title slide__title">Konx Bone</h1>
+</div>
+                    <div class="swiper-slide projects__slider--slide">
+    <div class="slide__photo">
+        <img src="assets/images/projects/projects-1.png" alt="Minimal magazine">
+    </div>
+    <div class="slide__sup">Magazine</div>
+    <h1 class="title slide__title">Minimal magazine</h1>
+</div>
+                    <div class="swiper-slide projects__slider--slide">
+    <div class="slide__photo">
+        <img src="assets/images/projects/projects-2.png" alt="Amira Karla">
+    </div>
+    <div class="slide__sup">Branding, Logo</div>
+    <h1 class="title slide__title">Amira Karla</h1>
+</div>
+                    <div class="swiper-slide projects__slider--slide">
+    <div class="slide__photo">
+        <img src="assets/images/projects/projects-3.png" alt="Konx Bone">
+    </div>
+    <div class="slide__sup">Product, Logo</div>
+    <h1 class="title slide__title">Konx Bone</h1>
+</div>
+                    <div class="swiper-slide projects__slider--slide">
+    <div class="slide__photo">
+        <img src="assets/images/projects/projects-1.png" alt="Minimal magazine">
+    </div>
+    <div class="slide__sup">Magazine</div>
+    <h1 class="title slide__title">Minimal magazine</h1>
+</div>
+                    <div class="swiper-slide projects__slider--slide">
+    <div class="slide__photo">
+        <img src="assets/images/projects/projects-2.png" alt="Amira Karla">
+    </div>
+    <div class="slide__sup">Branding, Logo</div>
+    <h1 class="title slide__title">Amira Karla</h1>
+</div>
+                    <div class="swiper-slide projects__slider--slide">
+    <div class="slide__photo">
+        <img src="assets/images/projects/projects-3.png" alt="Konx Bone">
+    </div>
+    <div class="slide__sup">Product, Logo</div>
+    <h1 class="title slide__title">Konx Bone</h1>
+</div>
+                </div>
+            </div>
+            
+            <div class="projects__slider--navigation">
+                <!-- <button class="btn slider__btn slider__btn--prev projects__slider--btn__prev">prev</button>
+                <button class="btn slider__btn slider__btn--next projects__slider--btn__next">next</button> -->
+
+                <button class="btn slider__btn slider__btn--prev projects__slider--btn__prev">
+    <span class="btn__inner slider__btn--inner slider__btn--inner__prev">prev</span>
+</button>
+                <button class="btn btn slider__btn slider__btn--next projects__slider--btn__next">
+    <span class="btn__inner slider__btn--inner slider__btn--inner__next">next</span>
+</button>
+            </div>
+        </div>
+    </div>
+</div>
+        <div class="clients" id="clients">
+    <div class="container">
+
+        <div class="clients__top">
+            <h1 class="title title__top clients__top--title">Our clients</h1>
+            <p class="paragraph clients__top--paragraph">
+                We have worked with great clients for which we are very proud.
+            </p>
+        </div>
+
+        <div class="clients__items">
+            <div class="clients__item">
+                <a href="#" class="clients__item--link">
+                    <img src="assets/images/clients/client-1.svg" alt="">
+                </a>
+            </div>
+            <div class="clients__item">
+                <a href="#" class="clients__item--link">
+                    <img src="assets/images/clients/client-2.svg" alt="">
+                </a>
+            </div>
+            <div class="clients__item">
+                <a href="#" class="clients__item--link">
+                    <img src="assets/images/clients/client-3.svg" alt="">
+                </a>
+            </div>
+            <div class="clients__item">
+                <a href="#" class="clients__item--link">
+                    <img src="assets/images/clients/client-4.svg" alt="">
+                </a>
+            </div>
+            <div class="clients__item">
+                <a href="#" class="clients__item--link">
+                    <img src="assets/images/clients/client-5.svg" alt="">
+                </a>
+            </div>
+        </div>
+
+    </div>
+</div>
+        <div class="awards" id="awards">
+    <div class="container">
+        
+        <div class="awards__top">
+            <h1 class="title title__top awards__top--title">Awards &amp; recognitions</h1>
+        </div>
+
+        <div class="awards__items">
+            <!-- <div class="awards__item--wrapper"> -->
+    <div class="awards__item">
+        <h2 class="awards__item--year">2022</h2>
+        <h1 class="title awards__item--title">best Website design</h1>
+        <p class="paragraph awards__item--paragraph">
+            Breakthrough designer of the year 2022
+        </p>
+    </div>
+<!-- </div> -->
+            <!-- <div class="awards__item--wrapper"> -->
+    <div class="awards__item">
+        <h2 class="awards__item--year">2022</h2>
+        <h1 class="title awards__item--title">Web animation award</h1>
+        <p class="paragraph awards__item--paragraph">
+            Breakthrough designer of the year 2022
+        </p>
+    </div>
+<!-- </div> -->
+            <!-- <div class="awards__item--wrapper"> -->
+    <div class="awards__item">
+        <h2 class="awards__item--year">2021</h2>
+        <h1 class="title awards__item--title">Top branding agency</h1>
+        <p class="paragraph awards__item--paragraph">
+            Breakthrough designer of the year 2022
+        </p>
+    </div>
+<!-- </div> -->
+            <!-- <div class="awards__item--wrapper"> -->
+    <div class="awards__item">
+        <h2 class="awards__item--year">2021</h2>
+        <h1 class="title awards__item--title">best Branding Agency</h1>
+        <p class="paragraph awards__item--paragraph">
+            Breakthrough designer of the year 2022
+        </p>
+    </div>
+<!-- </div> -->
+            <!-- <div class="awards__item--wrapper"> -->
+    <div class="awards__item">
+        <h2 class="awards__item--year">2020</h2>
+        <h1 class="title awards__item--title">UI/UX design award</h1>
+        <p class="paragraph awards__item--paragraph">
+            Breakthrough designer of the year 2022
+        </p>
+    </div>
+<!-- </div> -->
+            <!-- <div class="awards__item--wrapper"> -->
+    <div class="awards__item">
+        <h2 class="awards__item--year">2020</h2>
+        <h1 class="title awards__item--title">best motion design</h1>
+        <p class="paragraph awards__item--paragraph">
+            Breakthrough designer of the year 2022
+        </p>
+    </div>
+<!-- </div> -->
+        </div>
+
+    </div>
+</div>
+        <div class="achievements">
+    <div class="container">
+
+        <div class="achievements__items">
+
+            <div class="achievements__item">
+                <h1 class="title achievements__item--numb">12</h1>
+                <p class="paragraph achievements__item--description">Years of<br>experience</p>
+            </div>
+            <div class="achievements__item">
+                <h1 class="title achievements__item--numb">820</h1>
+                <p class="paragraph achievements__item--description">satisfied<br>clients</p>
+            </div>
+            <div class="achievements__item">
+                <h1 class="title achievements__item--numb">720</h1>
+                <p class="paragraph achievements__item--description">employees<br>worldwide</p>
+            </div>
+            <div class="achievements__item">
+                <h1 class="title achievements__item--numb">2220</h1>
+                <p class="paragraph achievements__item--description">projects<br>completed</p>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+        <div class="testimonials" id="testimonials">
+    <div class="testimonials__wrapper">
+        <div class="container">
+            <div class="testimonials__top">
+                <h1 class="title title__top testimonials__top--title">Testimonials</h1>
+            </div>
+        </div>
+
+        <div class="testimonials__slider">
+            <div class="testimonials__btn--wrapper">
+                <button class="btn slider__btn slider__btn--prev testimonials__slider--btn__prev">
+    <span class="btn__inner slider__btn--inner slider__btn--inner__prev">prev</span>
+</button>
+            </div>
+            <div class="container testimonials__container">
+                <div class="swiper testimonials__swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide testimonials__slide">
+    <p class="paragraph testimonials__slide--paragraph">“A pellen tesque pretium feugiat vel morbi sagittis lorem habi tasse cursus. Suspen dise tempus oncu enim pellen tesque est in neque, elit habi mattis.”</p>
+    <h1 class="title testimonials__slide--author">Kelly Garcia</h1>
+    <h2 class="testimonials__slide--work">CEO at Liami</h2>
+</div>
+                        <div class="swiper-slide testimonials__slide">
+    <p class="paragraph testimonials__slide--paragraph">“Feugiat hac porttitor sem dictum velit, elementum odio. Sed ipsum quis nec eget facilisis. Quis nibh ut bibendum nisl quis placerat proin tortor mattis in neque”</p>
+    <h1 class="title testimonials__slide--author">Jacque Adler</h1>
+    <h2 class="testimonials__slide--work">Owner of Jacque</h2>
+</div>
+                        <div class="swiper-slide testimonials__slide">
+    <p class="paragraph testimonials__slide--paragraph">“Quis nibh ut bibendum nisl quis placerat proin tortor mattis in neque. Feugiat hac porttitor sem dictum velit, elementum odio sed eget facilisis.”</p>
+    <h1 class="title testimonials__slide--author">Kerry Frank</h1>
+    <h2 class="testimonials__slide--work">Owner of KerryFashion</h2>
+</div>
+                        <div class="swiper-slide testimonials__slide">
+    <p class="paragraph testimonials__slide--paragraph">“A pellen tesque pretium feugiat vel morbi sagittis lorem habi tasse cursus. Suspen dise tempus oncu enim pellen tesque est in neque, elit habi mattis.”</p>
+    <h1 class="title testimonials__slide--author">Kelly Garcia</h1>
+    <h2 class="testimonials__slide--work">CEO at Liami</h2>
+</div>
+                        <div class="swiper-slide testimonials__slide">
+    <p class="paragraph testimonials__slide--paragraph">“Feugiat hac porttitor sem dictum velit, elementum odio. Sed ipsum quis nec eget facilisis. Quis nibh ut bibendum nisl quis placerat proin tortor mattis in neque”</p>
+    <h1 class="title testimonials__slide--author">Jacque Adler</h1>
+    <h2 class="testimonials__slide--work">Owner of Jacque</h2>
+</div>
+                        <div class="swiper-slide testimonials__slide">
+    <p class="paragraph testimonials__slide--paragraph">“Quis nibh ut bibendum nisl quis placerat proin tortor mattis in neque. Feugiat hac porttitor sem dictum velit, elementum odio sed eget facilisis.”</p>
+    <h1 class="title testimonials__slide--author">Kerry Frank</h1>
+    <h2 class="testimonials__slide--work">Owner of KerryFashion</h2>
+</div>
+                        <div class="swiper-slide testimonials__slide">
+    <p class="paragraph testimonials__slide--paragraph">“A pellen tesque pretium feugiat vel morbi sagittis lorem habi tasse cursus. Suspen dise tempus oncu enim pellen tesque est in neque, elit habi mattis.”</p>
+    <h1 class="title testimonials__slide--author">Kelly Garcia</h1>
+    <h2 class="testimonials__slide--work">CEO at Liami</h2>
+</div>
+                        <div class="swiper-slide testimonials__slide">
+    <p class="paragraph testimonials__slide--paragraph">“Feugiat hac porttitor sem dictum velit, elementum odio. Sed ipsum quis nec eget facilisis. Quis nibh ut bibendum nisl quis placerat proin tortor mattis in neque”</p>
+    <h1 class="title testimonials__slide--author">Jacque Adler</h1>
+    <h2 class="testimonials__slide--work">Owner of Jacque</h2>
+</div>
+                        <div class="swiper-slide testimonials__slide">
+    <p class="paragraph testimonials__slide--paragraph">“Quis nibh ut bibendum nisl quis placerat proin tortor mattis in neque. Feugiat hac porttitor sem dictum velit, elementum odio sed eget facilisis.”</p>
+    <h1 class="title testimonials__slide--author">Kerry Frank</h1>
+    <h2 class="testimonials__slide--work">Owner of KerryFashion</h2>
+</div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonials__btn--wrapper">
+                <button class="btn slider__btn slider__btn--next testimonials__slider--btn__next">
+    <span class="btn__inner slider__btn--inner slider__btn--inner__next">next</span>
+</button>
+            </div>
+        </div>
+    </div>
+</div>
+        <div class="news" id="news">
+    <div class="container">
+
+        <div class="news__top">
+            <h1 class="title title__top news__top--title">Latest News</h1>
+            <p class="paragraph news__top--paragraph">
+                Accusan maiores alias conseaut equatur aut perferendi.
+            </p>
+        </div>
+
+        <div class="news__items">
+            <a href="#" class="news__item--link">
+    <div class="news__item">
+        <div class="news__item--photo">
+            <img src="assets/images/news/news-1.png" alt="Graphic Designing Useful Tips & Best Practices">
+        </div>
+        <div class="news__item--content">
+            <p class="paragraph news__item--info">
+                Design
+                &nbsp;/&nbsp;
+                Sept 12, 2022
+            </p>
+            <h1 class="title news__item--title">
+                Graphic Designing Useful Tips & Best Practices
+            </h1> 
+        </div>
+    </div>
+</a>
+            <a href="#" class="news__item--link">
+    <div class="news__item">
+        <div class="news__item--photo">
+            <img src="assets/images/news/news-2.png" alt="Best way to do branding of digital products">
+        </div>
+        <div class="news__item--content">
+            <p class="paragraph news__item--info">
+                Branding
+                &nbsp;/&nbsp;
+                Sept 12, 2022
+            </p>
+            <h1 class="title news__item--title">
+                Best way to do branding of digital products
+            </h1> 
+        </div>
+    </div>
+</a>
+            <a href="#" class="news__item--link">
+    <div class="news__item">
+        <div class="news__item--photo">
+            <img src="assets/images/news/news-3.png" alt="Top 10 graphic designs review in 2022">
+        </div>
+        <div class="news__item--content">
+            <p class="paragraph news__item--info">
+                Graphic Design
+                &nbsp;/&nbsp;
+                Sept 12, 2022
+            </p>
+            <h1 class="title news__item--title">
+                Top 10 graphic designs review in 2022
+            </h1> 
+        </div>
+    </div>
+</a>
+        </div>
+
+        <div class="news__load">
+            <button class="btn news__load--btn">
+    <span class="btn__inner news__load--btn__inner">View all blogs</span>
+</button>
+        </div>
+
+        
+
+    </div>
+</div>
+        <footer class="footer">
+    <div class="container">
+        <div class="footer__inner">
+
+            <div class="footer__top">
+                <div class="footer__logo">
+                    <img src="assets/images/logo.svg" alt="Portfo.">
+                </div>
+            </div>
+            
+            <div class="footer__main">
+                
+                <div class="footer__subscribe">
+                    <p class="paragraph footer__subscribe--paragraph">
+                        Subscribe to newsletter to get some updates related with branding, designs and more.
+                    </p>
+                    <form action="/" class="footer__subscribe--form">
+                        <input type="text" class="footer__subscribe--input" placeholder="Write your email address">
+                        <button type="submit" class="btn footer__subscribe--btn">
+                            Subscribe
+                        </button>
+                    </form>
+                </div>
+
+                <div class="footer__columns">
+                    <!-- <div class="footer__column">
+                        <a href="#" class="footer__column--link">Home</a>
+                        <a href="#" class="footer__column--link">About</a>
+                    </div>
+
+                    <div class="footer__column">
+                        <a href="#" class="footer__column--link">Blogs</a>
+                        <a href="#" class="footer__column--link">Contact</a>
+                    </div>
+                    
+                    <div class="footer__column">
+                        <a href="#" class="footer__column--link">Services</a>
+                        <a href="#" class="footer__column--link">Portfolio</a>
+                    </div> -->
+                    <a href="#" class="footer__column--link">Home</a>
+                    <a href="#" class="footer__column--link">About</a>
+                    <a href="#" class="footer__column--link">Blogs</a>
+                    <a href="#" class="footer__column--link">Contact</a>
+                    <a href="#" class="footer__column--link">Services</a>
+                    <a href="#" class="footer__column--link">Portfolio</a>
+                </div>
+
+                <div class="footer__contact">
+                    <p class="paragraph footer__contact--paragraph">
+                        Subscribe to newsletter to get some updates related with branding, designs and more.
+                    </p>
+                    <a href="mailto:templatesjungle@gmail.com" class="footer__contact--email">
+                        templatesjungle@gmail.com
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <div class="footer__bottom">
+        <div class="container">
+            <div class="footer__bottom--inner">
+
+                <div class="footer__social">
+                    <a href="#" class="footer__social--link">
+                        <svg class="footer__social--icon">
+                            <use xlink:href="#facebook"></use>
+                        </svg>
+                        <p class="paragrapgh footer__social--paragraph">Facebook</p>
+                    </a>
+                    <a href="#" class="footer__social--link">
+                        <svg class="footer__social--icon">
+                            <use xlink:href="#twitter"></use>
+                        </svg>
+                        <p class="paragrapgh footer__social--paragraph">Twitter</p>
+                    </a>
+                    <a href="#" class="footer__social--link">
+                        <svg class="footer__social--icon">
+                            <use xlink:href="#linkedin"></use>
+                        </svg>
+                        <p class="paragrapgh footer__social--paragraph">Linkedin</p>
+                    </a>
+                    <a href="#" class="footer__social--link">
+                        <svg class="footer__social--icon">
+                            <use xlink:href="#dribble"></use>
+                        </svg>
+                        <p class="paragrapgh footer__social--paragraph">Dribble</p>
+                    </a>
+                    <a href="#" class="footer__social--link">
+                        <svg class="footer__social--icon">
+                            <use xlink:href="#youtube"></use>
+                        </svg>
+                        <p class="paragrapgh footer__social--paragraph">YouTube</p>
+                    </a>
+                </div>
+                <div class="paragraph footer__copy">
+                    &copy;2022, Portfo by <a href="#" class="footer__copy--link">TemplatesJungle.</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="assets/js/app.min.js"></script>
+
+</body>
+</html>
